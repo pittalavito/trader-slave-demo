@@ -19,18 +19,19 @@ pre {
     word-wrap: break-word;
 }
 
-#chart {
-    width: 80%;
-    height: 300px;
-    margin-bottom: 20px;
+#btcChart, #balanceChart {
+    width: 90%;
+    height: 200px;
+    margin-bottom: 5;
     border: 1px solid #ccc;
     background-color: #fff;
+    display: none;
 }
 
 #callView {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     width: 80%;
     padding: 15px;
@@ -41,7 +42,7 @@ pre {
     gap: 20px;
 }
 
-.reqDto {
+.reqDto, #reqDto{
     flex: 1;
     text-align: left;
     border: 1px solid #ccc;
@@ -54,9 +55,10 @@ pre {
     font-weight: bold;
 }
 
-.resDto {
+.resDto, #resDto {
     flex: 1;
     text-align: right;
+    align-items: flex-start;
     border: 1px solid #ccc;
     padding: 10px;
     background-color: #f9f9f9;
@@ -70,7 +72,6 @@ pre {
 #reqDto, #resDto {
     font-weight: normal;
     text-align: left;
-    max-height: 300px;
 }
 
 #buttonCallView {
